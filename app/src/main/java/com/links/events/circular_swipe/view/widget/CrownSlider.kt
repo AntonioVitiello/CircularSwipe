@@ -39,7 +39,6 @@ class CrownSlider : View, ExtendTouchView.ITouchEvent {
     private var mCrownImage: Drawable? = null
     private var mDegreeToMinuteFactor = DEGREE_TO_60_MINUTE_FACTOR
 
-    private var mPadding = 0
     private var mIsTouchStarted = false
     private var mListener: OnSliderListener? = null
 
@@ -71,10 +70,6 @@ class CrownSlider : View, ExtendTouchView.ITouchEvent {
         } finally {
             attrib.recycle()
         }
-    }
-
-    private fun setPadding(padding: Int) {
-        mPadding = padding
     }
 
     fun setCrownImage(drawable: Drawable?) {
