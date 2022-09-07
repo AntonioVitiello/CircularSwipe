@@ -14,6 +14,7 @@ import com.links.events.circular_swipe.view.widget.CrownSlider.TurnFactorType.TU
 import kotlin.math.acos
 import kotlin.math.roundToInt
 import kotlin.math.sign
+import kotlin.math.sqrt
 
 
 /**
@@ -171,13 +172,12 @@ class CrownSlider : View, ExtendTouchView.ITouchEvent {
     }
 
     private fun getRotatedCrown(drawable: Drawable, degree: Double): Drawable {
-        val drawables = arrayOf(drawable)
-        return object : LayerDrawable(drawables) {
+        return object : LayerDrawable(arrayOf(drawable)) {
             override fun draw(canvas: Canvas) {
                 canvas.rotate(
-                    degree.toFloat(),
-                    (drawable.bounds.width() / 2).toFloat(),
-                    (drawable.bounds.height() / 2).toFloat()
+                    degree.toFloat(),                        // degrees
+                    (drawable.bounds.width() / 2).toFloat(), // px
+                    (drawable.bounds.height() / 2).toFloat() // py
                 )
                 super.draw(canvas)
             }
@@ -187,13 +187,13 @@ class CrownSlider : View, ExtendTouchView.ITouchEvent {
     fun getDistanceBetween(x: Float, y: Float, p: PointF): Double {
         val dx = x - p.x
         val dy = y - p.y
-        return Math.sqrt(Math.pow(dx.toDouble(), 2.0) + Math.pow(dy.toDouble(), 2.0))
+        return sqrt(Math.pow(dx.toDouble(), 2.0) + Math.pow(dy.toDouble(), 2.0))
     }
 
     fun getDistanceBetween(p1: PointF, p2: PointF): Double {
         val dx = p1.x - p2.x
         val dy = p1.y - p2.y
-        return Math.sqrt(Math.pow(dx.toDouble(), 2.0) + Math.pow(dy.toDouble(), 2.0))
+        return sqrt(Math.pow(dx.toDouble(), 2.0) + Math.pow(dy.toDouble(), 2.0))
     }
 
     fun getDirection(p2: PointF, p1: PointF): Int {
