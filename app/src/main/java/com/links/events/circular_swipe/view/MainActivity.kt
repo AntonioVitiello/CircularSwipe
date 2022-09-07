@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             hoursTooltipGroup.isVisible = !hoursTooltipGroup.isVisible
         }
 
-        extendTouchView.on(crownSlider)
+        extendTouchView.of(crownSlider)
         crownSlider.setOnSliderMovedListener(object : CrownSlider.OnSliderListener {
             override fun onSliderStart() {
                 parkingSettingsAmountText.visibility = View.GONE

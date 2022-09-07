@@ -24,7 +24,7 @@ class ExtendTouchView : View {
         return true
     }
 
-    fun on(touchInterface: ITouchEvent) {
+    fun of(touchInterface: ITouchEvent) {
         mTouchInterface = touchInterface
     }
 
