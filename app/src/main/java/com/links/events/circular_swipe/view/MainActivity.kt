@@ -1,7 +1,6 @@
 package com.links.events.circular_swipe.view
 
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initComponents() {
         supportActionBar?.hide()
-        printCurrentDateTime()
+        printCurrentDateTime(true)
 
         clockHoursQuestion.setOnClickListener {
             hoursTooltipGroup.isVisible = !hoursTooltipGroup.isVisible
@@ -33,13 +32,14 @@ class MainActivity : AppCompatActivity() {
         extendTouchView.of(crownSlider)
         crownSlider.setOnSliderMovedListener(object : CrownSlider.OnSliderListener {
             override fun onSliderStart() {
-                parkingSettingsAmountText.visibility = View.GONE
+                parkingSettingsAmountText.isVisible = false
                 currentMillis = currentCalendar.timeInMillis
             }
 
             override fun onSliderChange(newValue: Int) {
-                currentCalendar.timeInMillis = currentMillis
-                if (!addMinutes(newValue) && newValue < 0) {
+                val isValid = addMinutes(newValue)
+                printCurrentDateTime(isValid)
+                if (!isValid && newValue < 0) {
                     crownSlider.stopSliding()
                 }
             }
@@ -52,12 +52,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addMinutes(minutes: Int): Boolean {
+        currentCalendar.timeInMillis = currentMillis
         currentCalendar.add(Calendar.MINUTE, minutes)
-        return printCurrentDateTime()
+        return currentCalendar.timeInMillis > System.currentTimeMillis()
     }
 
-    private fun printCurrentDateTime(): Boolean {
-        val isValid = currentCalendar.timeInMillis > System.currentTimeMillis()
+    private fun printCurrentDateTime(isValid: Boolean) {
         val date = if (isValid) {
             val shortDate = formatShortDate(currentCalendar.time)
             if (formatShortDate(Date()) == shortDate) {
@@ -71,7 +71,6 @@ class MainActivity : AppCompatActivity() {
         }
         parkingSettingsDate.setText(date)
         parkingSettingsTime.setText(formatShortTime(currentCalendar.time))
-        return isValid
     }
 
 }
