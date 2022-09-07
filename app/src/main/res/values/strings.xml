@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CircularSwipe</string>
+    <string name="blue_lines_parking_settings_description">Indica la scadenza e inserisci i dati per iniziare</string>
+    <string name="stall_number_tooltip">Inserire all\’interno di questo campo il numero di riferimento del parcheggio/zona indicato all’interno dell\’apposito parcheggio oppure dalla segnaletica nelle vicinanze.</string>
+    <string name="parking_settings_today_text">oggi</string>
+    <string name="parking_settings_until">alle</string>
+    <string name="parking_settings_amount_text">Importo previsto %s</string>
+    <string name="blue_lines_parking_settings_clock_turn">GIRA</string>
+    <string name="blue_lines_parking_settings_clock_start">INIZIA\nSOSTA</string>
+    <string name="blue_lines_parking_settings_clock_desc">Per selezionare la durata della sosta</string>
+    <string name="stall_number_text_hint">Numero di stallo</string>
+    <string name="blue_lines_parking_ticket_tooltip">In questa zona è obbligatorio esporre il talloncino \"UnipolSai\" che hai ricevuto per email. Per richiederlo nuovamente Clicca qui.</string>
+</resources>

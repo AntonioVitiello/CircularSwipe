@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4EADEA</color>
+    <color name="colorPrimaryDark">#212784</color>
+    <color name="colorAccent">@color/dandelion</color>
+    <color name="splash_bg">#F1D637</color>
+    <color name="colorPrimary20">#334EADEA</color>
+    <color name="dark_sky_blue">#4eadea</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_three">#fefefe</color>
+    <color name="white_50_two">#80dedede</color>
+    <color name="white10">#1Affffff</color>
+    <color name="white20">#22ffffff</color>
+    <color name="white40">#66ffffff</color>
+    <color name="dandelion">#f2de19</color>
+    <color name="dandelion_50">#80f2de19</color>
+    <color name="cobalt">#212784</color>
+    <color name="cobalt_30">#4D212784</color>
+    <color name="cobalt_50">#80212784</color>
+    <color name="azure_40">#6600a1ff</color>
+    <color name="bright_sky_blue">#00cfff</color>
+    <color name="very_light_blue">#dbedf6</color>
+    <color name="very_dark_blue">#000332</color>
+    <color name="very_dark_blue_80">#CC000332</color>
+    <color name="peacock_blue">#005a8f</color>
+    <color name="peacock_blue_10">#19005a8f</color>
+    <color name="peacock_blue_20">#22005a8f</color>
+    <color name="peacock_blue_80">#CC005a8f</color>
+    <color name="brown_grey">#7c7c7c</color>
+    <color name="red">#dd0000</color>
+    <color name="azure_two">#23a4ef</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_30">#4dffffff</color>
+    <color name="white_four">#f1f1f1</color>
+    <color name="dialog_top_color">#FFFFFF</color>
+    <color name="dialog_bottom_color">#F3FAFE</color>
+    <color name="goldenrod">#f2d819</color>
+    <color name="goldenrod_two">#f2d81a</color>
+    <color name="goldenrod_25">#40f2d819</color>
+    <color name="goldenrod_30">#4df2d819</color>
+    <color name="goldenrod_40">#66f2d819</color>
+    <color name="goldenrod_50">#80f2d819</color>
+    <color name="salmon">#ff7373</color>
+
+    <color name="circle_color">#332db8c5</color>
+
+    <color name="white_two">#f9f9f9</color>
+    <color name="very_light_pink">#f2f2f2</color>
+    <color name="warm_grey">#979797</color>
+    <color name="tomato">#ef483e</color>
+    <color name="dusty_orange">#e66845</color>
+
+    <color name="mid_blue">#1a64b3</color>
+    <color name="teal">#009688</color>
+    <color name="black_38">#61000000</color>
+    <color name="twilight_blue">#0d417a</color>
+    <color name="twilight_blue_50">#800d417a</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+</resources>

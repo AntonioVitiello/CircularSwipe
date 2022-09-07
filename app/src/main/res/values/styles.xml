@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="SpUsage">
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/dandelion</item>
+        <item name="colorControlHighlight">@color/dandelion</item>
+    </style>
+
+    <style name="DialogAppTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowBackground">@color/very_dark_blue_80</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DialogTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="NoTitleDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="parkingSectionWhiteButtonItemStyle">
+        <item name="android:fontFamily">@font/itcavantgardestd_bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/cobalt</item>
+    </style>
+
+    <style name="parkingMissingDataViewTitleStyle">
+        <item name="android:fontFamily">@font/itcavantgardestd_bk</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/cobalt</item>
+    </style>
+
+    <style name="textInfoDescriptionStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/itcavantgardestd_bk</item>
+    </style>
+
+    <style name="parkingSettingsDayStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/itcavantgardestd_bk</item>
+    </style>
+
+    <style name="parkingSettingsUntilStyle">
+        <item name="android:textColor">@color/goldenrod</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/itcavantgardestd_md</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="refuelingLiftDispenserTextStyle">
+        <item name="android:textColor">@color/cobalt</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/itcavantgardestd_bold</item>
+    </style>
+
+    <style name="parkingSettingsClockDescStyle">
+        <item name="android:textColor">@color/cobalt</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:fontFamily">@font/itcavantgardestd_bk</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="customEditTextStyle">
+        <item name="android:fontFamily">@font/itcavantgardestd_bk</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="parkingSettingsTooltipStyle">
+        <item name="android:textColor">@color/cobalt</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/itcavantgardestd_md</item>
+    </style>
+
+    <style name="customEditTextErrorStyle">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/itcavantgardestd_bk</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/itcavantgardestd_md</item>
+    </style>
+
+</resources>
