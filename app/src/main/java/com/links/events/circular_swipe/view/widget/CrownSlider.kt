@@ -11,6 +11,7 @@ import android.view.MotionEvent
 import android.view.View
 import com.links.events.circular_swipe.R
 import com.links.events.circular_swipe.view.widget.CrownSlider.TurnFactorType.TURN_FACTOR_15
+import com.links.events.circular_swipe.view.widget.CrownSlider.TurnFactorType.TURN_FACTOR_60
 import kotlin.math.acos
 import kotlin.math.roundToInt
 import kotlin.math.sign
@@ -79,7 +80,7 @@ class CrownSlider : View, ExtendTouchView.ITouchEvent {
     private fun setCrownTurnFactor(factor: TurnFactorType) {
         mDegreeToMinuteFactor = when (factor) {
             TURN_FACTOR_15 -> DEGREE_TO_15_MINUTE_FACTOR
-            else -> DEGREE_TO_60_MINUTE_FACTOR
+            TURN_FACTOR_60 -> DEGREE_TO_60_MINUTE_FACTOR
         }
     }
 
