@@ -9,6 +9,7 @@ import android.graphics.drawable.LayerDrawable
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
+import android.view.accessibility.AccessibilityNodeInfo
 import com.links.events.circular_swipe.R
 import com.links.events.circular_swipe.view.widget.CrownSlider.TurnFactorType.TURN_FACTOR_15
 import com.links.events.circular_swipe.view.widget.CrownSlider.TurnFactorType.TURN_FACTOR_60
@@ -107,7 +108,6 @@ class CrownSlider : View, ExtendTouchView.ITouchEvent {
         }
     }
 
-    @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (event.action) {
             MotionEvent.ACTION_DOWN -> { //on first touch
@@ -137,8 +137,16 @@ class CrownSlider : View, ExtendTouchView.ITouchEvent {
 //                Log.d(TAG, "onSliderStop:$mDiffMinutes")
             }
 
+            AccessibilityNodeInfo.ACTION_CLICK -> performClick()
+
         }
 
+        return true
+    }
+
+    override fun performClick(): Boolean {
+        parent.requestDisallowInterceptTouchEvent(false)
+        super.performClick()
         return true
     }
 
